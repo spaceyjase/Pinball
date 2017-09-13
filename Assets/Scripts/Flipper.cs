@@ -10,8 +10,6 @@ public class Flipper : MonoBehaviour
   private float maxDegreesDelta = 20.0f;
   [SerializeField]
   private string keyName = "Fire1";
-  [SerializeField]
-  private bool flipped = false;
 
   private Quaternion initialRotation = Quaternion.identity;
   private Quaternion finalRotation = Quaternion.identity;
@@ -20,7 +18,7 @@ public class Flipper : MonoBehaviour
   {
     initialRotation = transform.rotation;
     finalRotation.eulerAngles = new Vector3(initialRotation.eulerAngles.x, 
-      initialRotation.eulerAngles.y + (flipped ? -maxAngle : maxAngle), 
+      initialRotation.eulerAngles.y + maxAngle, 
       initialRotation.eulerAngles.z);
   }
 

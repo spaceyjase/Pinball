@@ -154,12 +154,17 @@ Prefab:
     - target: {fileID: 114457954804361366, guid: e5954ce07fb09aa41b74c4bcc10fab48,
         type: 2}
       propertyPath: flipped
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 114457954804361366, guid: e5954ce07fb09aa41b74c4bcc10fab48,
         type: 2}
       propertyPath: keyName
       value: Left
+      objectReference: {fileID: 0}
+    - target: {fileID: 114457954804361366, guid: e5954ce07fb09aa41b74c4bcc10fab48,
+        type: 2}
+      propertyPath: maxAngle
+      value: -20
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e5954ce07fb09aa41b74c4bcc10fab48, type: 2}
