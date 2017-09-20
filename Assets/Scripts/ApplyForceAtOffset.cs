@@ -7,7 +7,7 @@ public class ApplyForceAtOffset : MonoBehaviour
   [SerializeField]
   private float force = 100f;
   [SerializeField]
-  private Vector3 offset;
+  private Vector3 offset = Vector3.zero;
   [SerializeField]
   private Vector3 forceDirection = Vector3.forward;
   [SerializeField]
