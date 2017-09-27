@@ -10,6 +10,7 @@ public class DropTarget : MonoBehaviour
   [SerializeField]
   private float resetDelay = 0.5f;
 
+  // TODO: individual banks (e.g. bank id, or use a dictionary)
   private static List<DropTarget> bank = new List<DropTarget>();
 
   private bool isDropped = false;
