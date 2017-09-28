@@ -9,6 +9,10 @@ public class DropTarget : MonoBehaviour
   private float dropDistance = 1.0f;
   [SerializeField]
   private float resetDelay = 0.5f;
+  [SerializeField]
+  private int singleValue = 100;
+  [SerializeField]
+  private int bankValue = 5000;
 
   // TODO: individual banks (e.g. bank id, or use a dictionary)
   private static List<DropTarget> bank = new List<DropTarget>();
@@ -33,6 +37,7 @@ public class DropTarget : MonoBehaviour
   {
     transform.position += Vector3.down * dropDistance;
     isDropped = true;
+    ScoreManager.Score += singleValue;
   }
 
   private void Awake()
@@ -49,6 +54,7 @@ public class DropTarget : MonoBehaviour
       if (allDropped)
       {
         StartCoroutine(nameof(ResetBank));
+        ScoreManager.Score += bankValue;
       }
     }
   }

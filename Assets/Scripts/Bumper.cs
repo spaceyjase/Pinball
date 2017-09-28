@@ -10,6 +10,8 @@ public class Bumper : MonoBehaviour
   private float radius = 1.0f;
   [SerializeField]
   private float forceRadius = 1.0f;
+  [SerializeField]
+  private int value = 100;
 
   private void OnCollisionEnter(Collision collision)
   {
@@ -21,5 +23,6 @@ public class Bumper : MonoBehaviour
         rb.AddExplosionForce(force, transform.position, forceRadius);
       }
     }
+    ScoreManager.Score += value;
   }
 }
