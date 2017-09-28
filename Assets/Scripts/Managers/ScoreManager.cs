@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class ScoreManager : MonoBehaviour
 {
+  [SerializeField]
+  private TextMesh scoreDisplay;
+
   public static int Score { get; set; }
 
   private void Start()
@@ -11,8 +14,11 @@ public class ScoreManager : MonoBehaviour
     Score = 0;
   }
 
-  private void OnGUI()
+  private void Update()
   {
-    GUILayout.Label("Score: " + Score.ToString());
+    if (scoreDisplay != null)
+    {
+      scoreDisplay.text = Score.ToString("D8");
+    }
   }
 }
