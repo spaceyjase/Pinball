@@ -247,7 +247,7 @@ Transform:
   m_PrefabInternal: {fileID: 1548272345}
 --- !u!102 &195977074 stripped
 TextMesh:
-  m_PrefabParentObject: {fileID: 102258686895833846, guid: 404f86fd1bdbec24485a03998eb8af27,
+  m_PrefabParentObject: {fileID: 102098140581365486, guid: 404f86fd1bdbec24485a03998eb8af27,
     type: 2}
   m_PrefabInternal: {fileID: 1548272345}
 --- !u!1 &301459757
@@ -600,6 +600,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ballPrefab: {fileID: 1397913950788884, guid: 4b94f14093561cd4b9aacb80128c0aef, type: 2}
   spawnPosition: {fileID: 142666458}
+  ballsRemaining: {fileID: 1587458916}
+--- !u!102 &1587458916 stripped
+TextMesh:
+  m_PrefabParentObject: {fileID: 102258686895833846, guid: 404f86fd1bdbec24485a03998eb8af27,
+    type: 2}
+  m_PrefabInternal: {fileID: 1548272345}
 --- !u!1001 &1641984769
 Prefab:
   m_ObjectHideFlags: 0

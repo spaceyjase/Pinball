@@ -10,6 +10,8 @@ public class BallManager : MonoBehaviour
   private static int lives = 3;
   [SerializeField]
   private Transform spawnPosition;
+  [SerializeField]
+  private TextMesh ballsRemaining;
 
   private void Update()
   {
@@ -18,5 +20,6 @@ public class BallManager : MonoBehaviour
       --lives;
       Instantiate(ballPrefab, spawnPosition.position, ballPrefab.transform.rotation);
     }
+    ballsRemaining.text = string.Empty.PadLeft(lives, '•');
   }
 }
